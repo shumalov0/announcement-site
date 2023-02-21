@@ -36,7 +36,7 @@
         <div class="box-right">
           <div class="user">
             <a href="#"><i class="fa-solid fa-user"></i></a>
-            <a data-bs-toggle="modal" data-bs-target="#popup-Login" href="#"
+            <a data-bs-toggle="modal" data-bs-target="#popup-Login"
               >Giriş</a
             >
 
@@ -47,7 +47,7 @@
         </div>
       </div>
       <!-- Modal Log-in-->
-      <!-- --------------------------------------Login modal -->
+      <!-----Login modal -->
       <div
         class="modal fade modal-fullscreen-lg-down"
         id="popup-Login"
@@ -122,8 +122,11 @@
                       <input type="checkbox" />
                       <span>Şifrəni xatırla</span>
                     </label>
-                    <a  data-bs-toggle="modal"
-                    data-bs-target="#popup-passwordforqot">Şifrəmi unutdum</a>
+                    <a
+                      data-bs-toggle="modal"
+                      data-bs-target="#popup-passwordforqot"
+                      >Şifrəmi unutdum</a
+                    >
                   </div>
                   <div class="button-gre">
                     <a href="#">Daxil ol</a>
@@ -132,7 +135,9 @@
                     <a href="#">Saytımızda yenisiz? o zaman</a>
                   </p>
                   <div class="signin-button">
-                    <a data-bs-toggle="modal" data-bs-target="#popup-qeydiyyat">Qeydiyyatdan keçin</a>
+                    <a data-bs-toggle="modal" data-bs-target="#popup-qeydiyyat"
+                      >Qeydiyyatdan keçin</a
+                    >
                   </div>
                 </form>
               </div>
@@ -140,7 +145,7 @@
           </div>
         </div>
       </div>
-      <!-- ---------------------------------------Mobile modal -->
+      <!-- ------Mobile modal -->
       <div
         class="modal fade modal-fullscreen-lg-down"
         id="popup-Mobile"
@@ -219,8 +224,11 @@
                       <input type="checkbox" />
                       <span>Şifrəni xatırla</span>
                     </label>
-                    <a data-bs-toggle="modal"
-                    data-bs-target="#popup-passwordforqot">Şifrəmi unutdum</a>
+                    <a
+                      data-bs-toggle="modal"
+                      data-bs-target="#popup-passwordforqot"
+                      >Şifrəmi unutdum</a
+                    >
                   </div>
                   <div class="button-gre">
                     <a href="#">Daxil ol</a>
@@ -229,7 +237,9 @@
                     <a href="#">Saytımızda yenisiz? o zaman</a>
                   </p>
                   <div class="signin-button">
-                    <a href="#">Qeydiyyatdan keçin</a>
+                    <a data-bs-toggle="modal" data-bs-target="#popup-qeydiyyat"
+                      >Qeydiyyatdan keçin</a
+                    >
                   </div>
                 </form>
               </div>
@@ -237,7 +247,7 @@
           </div>
         </div>
       </div>
-      <!-- -----------------------------------------Qeydiyyat modal -->
+      <!-----Qeydiyyat modal -->
       <div
         class="modal fade modal-fullscreen-lg-down"
         id="popup-qeydiyyat"
@@ -316,7 +326,11 @@
                     </label>
                   </div>
                   <div class="lest-go">
-                    <span> <a data-bs-toggle="modal" data-bs-target="#popup-davamet">Davam edin</a></span>
+                    <span>
+                      <a data-bs-toggle="modal" data-bs-target="#popup-davamet"
+                        >Davam edin</a
+                      ></span
+                    >
                   </div>
 
                   <p class="new-user">
@@ -325,7 +339,9 @@
                     >
                   </p>
                   <div class="button-gre reg">
-                    <a data-bs-toggle="modal" data-bs-target="#popup-Login">Daxil olun</a>
+                    <a data-bs-toggle="modal" data-bs-target="#popup-Login"
+                      >Daxil olun</a
+                    >
                   </div>
                 </form>
               </div>
@@ -335,57 +351,370 @@
       </div>
       <!-- Davam-edin modal -->
       <div
-      class="modal fade modal-fullscreen-lg-down"
-      id="popup-davamet"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body ">
-            <div class="container sig-con">
-              <div class="text-section">
-                <h1>Qeydiyyat</h1>
-                <p><span>Telefonunuza göndərilən 4 xanalı kodu girin</span></p>
-              </div>
-              <div class="securty-code">
-                <input oninput="goNext(event)" maxlength="1" type="text" required>
-                <input  oninput="goNext(event)" maxlength="1" type="text" required>
-                <input  oninput="goNext(event)" maxlength="1" type="text"required>
-                <input  oninput="goNext(event)" maxlength="1" type="text" required>
-                <input  oninput="goNext(event)" maxlength="1" type="text" required>
-                <input  oninput="goNext(event)" maxlength="1" type="text" required>
-              </div>
+        class="modal fade modal-fullscreen-lg-down"
+        id="popup-davamet"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="container sig-con">
+                <div class="text-section">
+                  <h1>Qeydiyyat</h1>
+                  <p>
+                    <span>Telefonunuza göndərilən 4 xanalı kodu girin</span>
+                  </p>
+                </div>
+                <div class="securty-code">
+                  <input
+                    oninput="goNext(event)"
+                    maxlength="1"
+                    type="text"
+                    required
+                  />
+                  <input
+                    oninput="goNext(event)"
+                    maxlength="1"
+                    type="text"
+                    required
+                  />
+                  <input
+                    oninput="goNext(event)"
+                    maxlength="1"
+                    type="text"
+                    required
+                  />
+                  <input
+                    oninput="goNext(event)"
+                    maxlength="1"
+                    type="text"
+                    required
+                  />
+                  <input
+                    oninput="goNext(event)"
+                    maxlength="1"
+                    type="text"
+                    required
+                  />
+                  <input
+                    oninput="goNext(event)"
+                    maxlength="1"
+                    type="text"
+                    required
+                  />
+                </div>
                 <div class="button-gre pre">
                   <a href="#">Təsdiq edin</a>
                 </div>
                 <div class="refresh">
-                    <a href="#">Nömrəni yenilə</a>
-                    <a href="#">Kodu yenidən göndər</a>
+                  <a href="#">Nömrəni yenilə</a>
+                  <a href="#">Kodu yenidən göndər</a>
                 </div>
-               
+              </div>
             </div>
           </div>
         </div>
       </div>
-    
-    </div>
 
-   <!-- ------------- forqot pasword -->
+      <!--- forqot pasword  email-->
+      <div
+        class="modal fade modal-fullscreen-lg-down"
+        id="popup-passwordforqot"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="container sig-con">
+                <div class="text-section">
+                  <h1>Şifrəmi unutdum</h1>
+                  <p>
+                    <span
+                      >Narahat olmayın biz sizə daxil olmaq üçün kod
+                      göndərəcəyik
+                    </span>
+                  </p>
+                </div>
+                <div class="contact-email">
+                  <a
+                    data-bs-toggle="modal"
+                    data-bs-target="#popup-passwordforqot"
+                    class="active-a"
+                    >Email</a
+                  >
+                  <a
+                  data-bs-toggle="modal"
+                  data-bs-target="#popup-mobileforqot"
+                    class="m-3 atwo"
+                    >Mobil nömrə</a
+                  >
+                </div>
+                <label class="label-form eform">
+                  <span>Email</span>
+                  <input
+                    type="text"
+                    placeholder="Emailinizi daxil edin"
+                    class="email-box"
+                  />
+                </label>
+                <div class="button-gre gre">
+                  <a data-bs-toggle="modal"
+                  data-bs-target="#popup-sendemail"
+                    >Linki göndər</a
+                  >
+                </div>
+                <div class="refresh">
+                  <a href="#">Nömrəni yenilə</a>
+                  <a href="#">Kodu yenidən göndər</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  emailinizi yoxlayin -->
+      <div
+        class="modal fade modal-fullscreen-lg-down"
+        id="popup-sendemail"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                <div class="text-section">
+                  <h1>E-mailinizi yoxlayın</h1>
+                  <p>
+                    <span
+                      >Lazımi məlumatlar example@az ünvanına
+                      göndərildi.Emailinizə göndərilən 4 xanalı kodu girin</span
+                    >
+                  </p>
+                </div>
+                <div class="securty-code">
+                  <input
+                    oninput="goNext(event)"
+                    maxlength="1"
+                    type="text"
+                    required
+                  />
+                  <input
+                    oninput="goNext(event)"
+                    maxlength="1"
+                    type="text"
+                    required
+                  />
+                  <input
+                    oninput="goNext(event)"
+                    maxlength="1"
+                    type="text"
+                    required
+                  />
+                  <input
+                    oninput="goNext(event)"
+                    maxlength="1"
+                    type="text"
+                    required
+                  />
+                </div>
+
+                <div class="button-gre gre">
+                  <a data-bs-toggle="modal" data-bs-target="#popup-davamedin"
+                    >Davam edin</a
+                  >
+                </div>
+                <div class="refresh">
+                  <a href="#">Nömrəni yenilə</a>
+                  <a href="#">Kodu yenidən göndər</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--   davam edin email -->
+      <div
+        class="modal fade modal-fullscreen-lg-down"
+        id="popup-davamedin"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                <div class="text-section">
+                  <h1>Yeni şifrənizi yazın</h1>
+                </div>
+                <label class="label-form">
+                  <span>Yeni şifrə</span>
+                  <input
+                    id="password-four"
+                    type="password"
+                    placeholder=" Yeni şifrə yaradın"
+                    class="password-box"
+                    name="Şifrə"
+                  />
+                  <div class="icon">
+                    <i
+                      class="fa-solid fa-eye-slash"
+                      id="pasword-icon"
+                      onclick="showHidefour()"
+                    ></i>
+                  </div>
+                </label>
+                <label class="label-form">
+                  <span>Yeni şifrənin təkrarı</span>
+                  <input
+                    id="password-three"
+                    type="password"
+                    placeholder=" Şifrəni yenidən daxil edin "
+                    class="password-box"
+                    name="Şifrə"
+                  />
+                  <div class="icon">
+                    <i
+                      class="fa-solid fa-eye-slash"
+                      id="pasword-icon"
+                      onclick="showHidethree()"
+                    ></i>
+                  </div>
+                </label>
+                <label class="pasword-r">
+                  <input type="checkbox" />
+                  <span>Şifrəni xatırla</span>
+                </label>
+                <div class="new-password">
+                  <a data-bs-toggle="modal" data-bs-target="#popup-ugurludavam"
+                    >Şifrəmi yenilə</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ugurlu davam email -->
+      <div
+        class="modal fade modal-fullscreen-lg-down"
+        id="popup-ugurludavam"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                <div class="text-section">
+                  <h1>Yeni şifrənizi yazın</h1>
+                </div>
+                <label class="label-form">
+                  <span>Yeni şifrə</span>
+                  <input
+                    id="password-five"
+                    type="password"
+                    placeholder=" Yeni şifrə yaradın"
+                    class="password-box"
+                    name="Şifrə"
+                  />
+                  <div class="icon">
+                    <i
+                      class="fa-solid fa-eye-slash"
+                      id="pasword-icon"
+                      onclick="showHidefive()"
+                    ></i>
+                  </div>
+                </label>
+                <label class="label-form">
+                  <span>Yeni şifrənin təkrarı</span>
+                  <input
+                    id="password-sixt"
+                    type="password"
+                    placeholder=" Şifrəni yenidən daxil edin "
+                    class="password-box"
+                    name="Şifrə"
+                  />
+                  <div class="icon">
+                    <i
+                      class="fa-solid fa-eye-slash"
+                      id="pasword-icon"
+                      onclick="showHidesixt()"
+                    ></i>
+                  </div>
+                </label>
+                <label class="pasword-r">
+                  <input type="checkbox" />
+                  <span>Şifrəni xatırla</span>
+                </label>
+                <div class="succes-btn">
+                  <a href="#">Şifrəniz uğurla yeniləndi</a>
+                </div>
+                
+                  <a class="login-btn"  data-bs-toggle="modal"
+                  data-bs-target="#popup-Login">Daxil olun</a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- forgot password mobile -->
       <div
       class="modal fade modal-fullscreen-lg-down"
-      id="popup-passwordforqot"
+      id="popup-mobileforqot"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
-      aria-hidden="true">
+      aria-hidden="true"
+    >
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -396,138 +725,133 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body ">
+          <div class="modal-body">
             <div class="container sig-con">
               <div class="text-section">
                 <h1>Şifrəmi unutdum</h1>
-                <p><span>Narahat olmayın biz sizə daxil olmaq üçün kod göndərəcəyik </span></p>
-                
+                <p>
+                  <span
+                    >Narahat olmayın biz sizə daxil olmaq üçün kod
+                    göndərəcəyik
+                  </span>
+                </p>
               </div>
               <div class="contact-email">
                 <a
                   data-bs-toggle="modal"
                   data-bs-target="#popup-passwordforqot"
-                  class="active-a"
+                  class=""
                   >Email</a
                 >
                 <a
-                  data-bs-toggle="modal"
-                  data-bs-target="#popup-Mobile"
-                  href="#"
-                  class="m-3 atwo"
+                data-bs-toggle="modal"
+                data-bs-target="#popup-mobileforqot"
+                  class="m-3 atwo active-a"
                   >Mobil nömrə</a
                 >
               </div>
-              <label class="label-form eform" >
-                <span>Email</span>
+              <label class="label-form eform">
+                <span>Mobil nömrə</span>
                 <input
-                type="text"
-                placeholder="Emailinizi daxil edin"
-                class="email-box"
-              />
+                  type="text"
+                  placeholder="Mobil nömrənizi daxil edin"
+                  class="email-box"
+                />
               </label>
-                <div class="button-gre gre">
-                  <a data-bs-toggle="modal"
-                  data-bs-target="#popup-sendemail">Linki göndər</a>
-                </div>
-                <div class="refresh">
-                    <a href="#">Nömrəni yenilə</a>
-                    <a href="#">Kodu yenidən göndər</a>
-                </div>
-               
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--  emailinizi yoxlayin -->
-    <div
-    class="modal fade modal-fullscreen-lg-down"
-    id="popup-sendemail"
-    tabindex="-1"
-    aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="modal-body ">
-          <div class="container ">
-            <div class="text-section">
-              <h1>E-mailinizi yoxlayın</h1>
-              <p><span>Lazımi məlumatlar example@az ünvanına göndərildi.Emailinizə göndərilən 4 xanalı kodu girin</span></p>
-              
-            </div>
-            <div class="securty-code">
-                <input oninput="goNext(event)" maxlength="1" type="text" required>
-                <input  oninput="goNext(event)" maxlength="1" type="text" required>
-                <input  oninput="goNext(event)" maxlength="1" type="text"required>
-                <input  oninput="goNext(event)" maxlength="1" type="text" required>
-
-              </div>
-            
               <div class="button-gre gre">
-                <a href="#">Davam edin</a>
+                <a data-bs-toggle="modal"
+                data-bs-target="#popup-sendmobil"
+                  >Linki göndər</a
+                >
               </div>
               <div class="refresh">
-                  <a href="#">Nömrəni yenilə</a>
-                  <a href="#">Kodu yenidən göndər</a>
+                <a href="#">Nömrəni yenilə</a>
+                <a href="#">Kodu yenidən göndər</a>
               </div>
-             
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--   davam edin email -->
-  <div
-  class="modal fade modal-fullscreen-lg-down"
-  id="popup-sendemail"
-  tabindex="-1"
-  aria-labelledby="exampleModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="modal-body ">
-        <div class="container ">
-          <div class="text-section">
-            <h1>Yeni şifrənizi yazın</h1>   
-          </div>
-            <div class="button-gre gre">
-              <a href="#">Davam edin</a>
-
             </div>
-           
+          </div>
+        </div>
+      </div>
+      </div>
+      <!-- mobil telinizi yoxlayin -->
+      <div
+      class="modal fade modal-fullscreen-lg-down"
+      id="popup-sendmobil"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="text-section">
+                <h1>Telefonunuzu yoxlayın</h1>
+                <p>
+                  <span
+                    >Lazımi məlumatlar (+994) 70 252 54 56 nömrəsinə göndərildi.
+                    Telefonunuza göndərilən 4 xanalı kodu girin</span
+                  >
+                </p>
+              </div>
+              <div class="securty-code">
+                <input
+                  oninput="goNext(event)"
+                  maxlength="1"
+                  type="text"
+                  required
+                />
+                <input
+                  oninput="goNext(event)"
+                  maxlength="1"
+                  type="text"
+                  required
+                />
+                <input
+                  oninput="goNext(event)"
+                  maxlength="1"
+                  type="text"
+                  required
+                />
+                <input
+                  oninput="goNext(event)"
+                  maxlength="1"
+                  type="text"
+                  required
+                />
+              </div>
+
+              <div class="button-gre gre">
+                <a data-bs-toggle="modal" data-bs-target="#popup-davamedin"
+                  >Davam edin</a
+                >
+              </div>
+              <div class="refresh">
+                <a href="#">Nömrəni yenilə</a>
+                <a href="#">Kodu yenidən göndər</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-
-
     </header>
     <!-- main -->
-    <section>
+    <section style="position: relative;">
       <div class="container main">
         <div class="logo">
           <a href="#">Logo</a>
         </div>
         <div class="search-box">
-          <button>
+          <button class="dropdown-btn ">
             <svg
               width="18"
               height="18"
@@ -540,7 +864,7 @@
                 fill="#6A5BCD"
               />
             </svg>
-            <span> Kateqoriya seçin </span>
+            <span > Kateqoriya seçin </span>
           </button>
           <input
             type="text"
@@ -548,6 +872,107 @@
           />
           <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
         </div>
+        <!-- category -->
+        <section class="category-dropdown">
+          <div class="category-bb">
+            <div class="category-type">
+              <ul>
+                <li class="category-box">
+                  <div >
+                    <i class="fa-solid fa-house"></i> 
+                   <a href="#">Ev və bağ</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                </li>
+        
+                <li class="category-box">
+                  <div>
+                    <i class="fa-solid fa-mobile-button"></i>
+                  <a href="#">Elektronika və texnika</a>
+                  <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                </li>
+          
+                <li class="category-box">
+                  <div>
+                    <i class="fa-solid fa-building"></i>
+                   <a href="#">Daşınmaz əmlak</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                </li>
+            
+                <li class="category-box">
+                  <div>
+                    <i class="fa-solid fa-shirt"></i>
+                    <a href="#">Şəxsi əşyalar</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                </li>
+                <li class="category-box">
+                  <div>
+                    <i class="fa-solid fa-futbol"></i>
+               <a href="#">Hobbi,asudə</a>
+                <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                </li>
+                <li class="category-box">
+                  <div>
+                    <i class="fa-solid fa-truck"></i>
+                <a href="#">Uşaq aləmi</a>
+                <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                </li>
+                <li class="category-box">
+                  <div>
+                    <i class="fa-solid fa-dog"></i>
+                 <a href="#">Heyvan</a>
+                <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                </li>
+                <li class="category-box">
+                  <div>
+                    <i class="fa-solid fa-car"></i>
+                    <a href="#">Nəqliyyat</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                </li>
+                <li class="category-box">
+                  <div>
+                    <i class="fa-solid fa-bag-shopping"></i>
+                <a href="#">Vakansiyalar</a>
+                <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                </li>
+                <li class="category-box">
+                  <div>
+                    <i class="fa-solid fa-wrench"></i>
+                   <a href="#">Digər xidmətlər</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="popular-search">
+              <p>populyar axtarışlar</p>
+              <ul  class="popular-ul">
+                <li>Bakcell nömrələri</li>
+                <li>Xiomit</li>
+                <li>Ev alqı satqısı</li>
+                <li>Maşın elanları</li>
+                <li>Kirayə bağ evi</li>
+                <li>Mətbəx mebelləri</li>
+                <li>Nar nömrələri</li>
+                <li>Azercell nömrələri</li>
+              </ul>
+          </div>
+         
+          </div>
+          
+          
+
+
+
+        </section>
         <div class="select-box">
           <a href="#"><i class="fa-regular fa-heart"></i> </a>
           <a href="#">Seçilənlər</a>

@@ -876,9 +876,10 @@ body {
 
 .password-remember a {
     text-decoration: none;
-    color: #6A5BCD;
+    color: #6A5BCD !important;
     font-weight: 700;
     padding-left: 140px;
+    cursor: pointer;
 }
 
 .password-remember-two{
@@ -1113,3 +1114,145 @@ body {
   background-color: #6A5BCD;
 }
 
+.pasword-r{
+    margin-top: 20px;
+    padding: 5px;
+
+}
+
+.pasword-r input{
+  
+    accent-color: #dedada;
+   
+     
+}
+.pasword-r span{
+    color: #ABA9B7;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.new-password{
+    background-color: #6A5BCD;
+    width: 382px;
+    height: 69px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:50px ;
+}
+
+.new-password a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffff !important;
+    cursor: pointer;
+}
+
+.succes-btn{
+    max-width: 382px;
+    height: 69px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: #5BCD74;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.succes-btn a{
+    color: #ffff;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+
+}
+.login-btn{
+    background-color: #6A5BCD;
+    max-width: 382px;
+    height: 69px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer; 
+     color:#ffff ;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+
+}
+
+.category-dropdown{
+    width: 1280px;
+    position: absolute;
+    background-color: #ffff;
+    z-index: 3;
+    position: absolute;
+    width:100%;
+    height: 473.54px;
+    left: 0;
+    top: 56.46px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+}
+
+
+
+.category-bb{
+   
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1280px;
+    background-color: #ffff;
+}
+
+
+.category-type{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.category-type ul{
+   list-style: none;
+}
+.category-type a{
+    text-decoration: none;
+    color:#7D8092 ;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.category-type i{
+    color: #F399BE;
+   padding: 8px;
+    background-color: #cdcdcd;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    
+}
