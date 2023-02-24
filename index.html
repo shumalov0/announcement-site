@@ -20,6 +20,7 @@
   </head>
   <body>
     <!-- header  -->
+    <div class="black-area"></div>
     <header class="head">
       <div class="container header">
         <div class="box-left">
@@ -36,9 +37,7 @@
         <div class="box-right">
           <div class="user">
             <a href="#"><i class="fa-solid fa-user"></i></a>
-            <a data-bs-toggle="modal" data-bs-target="#popup-Login"
-              >Giriş</a
-            >
+            <a data-bs-toggle="modal" data-bs-target="#popup-Login">Giriş</a>
 
             <a data-bs-toggle="modal" data-bs-target="#popup-qeydiyyat"
               >Qeydiyyat</a
@@ -463,8 +462,8 @@
                     >Email</a
                   >
                   <a
-                  data-bs-toggle="modal"
-                  data-bs-target="#popup-mobileforqot"
+                    data-bs-toggle="modal"
+                    data-bs-target="#popup-mobileforqot"
                     class="m-3 atwo"
                     >Mobil nömrə</a
                   >
@@ -478,8 +477,7 @@
                   />
                 </label>
                 <div class="button-gre gre">
-                  <a data-bs-toggle="modal"
-                  data-bs-target="#popup-sendemail"
+                  <a data-bs-toggle="modal" data-bs-target="#popup-sendemail"
                     >Linki göndər</a
                   >
                 </div>
@@ -698,10 +696,13 @@
                 <div class="succes-btn">
                   <a href="#">Şifrəniz uğurla yeniləndi</a>
                 </div>
-                
-                  <a class="login-btn"  data-bs-toggle="modal"
-                  data-bs-target="#popup-Login">Daxil olun</a>
-                
+
+                <a
+                  class="login-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#popup-Login"
+                  >Daxil olun</a
+                >
               </div>
             </div>
           </div>
@@ -709,162 +710,187 @@
       </div>
       <!-- forgot password mobile -->
       <div
-      class="modal fade modal-fullscreen-lg-down"
-      id="popup-mobileforqot"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="container sig-con">
-              <div class="text-section">
-                <h1>Şifrəmi unutdum</h1>
-                <p>
-                  <span
-                    >Narahat olmayın biz sizə daxil olmaq üçün kod
-                    göndərəcəyik
-                  </span>
-                </p>
-              </div>
-              <div class="contact-email">
-                <a
-                  data-bs-toggle="modal"
-                  data-bs-target="#popup-passwordforqot"
-                  class=""
-                  >Email</a
-                >
-                <a
-                data-bs-toggle="modal"
-                data-bs-target="#popup-mobileforqot"
-                  class="m-3 atwo active-a"
-                  >Mobil nömrə</a
-                >
-              </div>
-              <label class="label-form eform">
-                <span>Mobil nömrə</span>
-                <input
-                  type="text"
-                  placeholder="Mobil nömrənizi daxil edin"
-                  class="email-box"
-                />
-              </label>
-              <div class="button-gre gre">
-                <a data-bs-toggle="modal"
-                data-bs-target="#popup-sendmobil"
-                  >Linki göndər</a
-                >
-              </div>
-              <div class="refresh">
-                <a href="#">Nömrəni yenilə</a>
-                <a href="#">Kodu yenidən göndər</a>
+        class="modal fade modal-fullscreen-lg-down"
+        id="popup-mobileforqot"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="container sig-con">
+                <div class="text-section">
+                  <h1>Şifrəmi unutdum</h1>
+                  <p>
+                    <span
+                      >Narahat olmayın biz sizə daxil olmaq üçün kod
+                      göndərəcəyik
+                    </span>
+                  </p>
+                </div>
+                <div class="contact-email">
+                  <a
+                    data-bs-toggle="modal"
+                    data-bs-target="#popup-passwordforqot"
+                    class=""
+                    >Email</a
+                  >
+                  <a
+                    data-bs-toggle="modal"
+                    data-bs-target="#popup-mobileforqot"
+                    class="m-3 atwo active-a"
+                    >Mobil nömrə</a
+                  >
+                </div>
+                <label class="label-form eform">
+                  <span>Mobil nömrə</span>
+                  <input
+                    type="text"
+                    placeholder="Mobil nömrənizi daxil edin"
+                    class="email-box"
+                  />
+                </label>
+                <div class="button-gre gre">
+                  <a data-bs-toggle="modal" data-bs-target="#popup-sendmobil"
+                    >Linki göndər</a
+                  >
+                </div>
+                <div class="refresh">
+                  <a href="#">Nömrəni yenilə</a>
+                  <a href="#">Kodu yenidən göndər</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
       </div>
       <!-- mobil telinizi yoxlayin -->
       <div
-      class="modal fade modal-fullscreen-lg-down"
-      id="popup-sendmobil"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="container">
-              <div class="text-section">
-                <h1>Telefonunuzu yoxlayın</h1>
-                <p>
-                  <span
-                    >Lazımi məlumatlar (+994) 70 252 54 56 nömrəsinə göndərildi.
-                    Telefonunuza göndərilən 4 xanalı kodu girin</span
-                  >
-                </p>
-              </div>
-              <div class="securty-code">
-                <input
-                  oninput="goNext(event)"
-                  maxlength="1"
-                  type="text"
-                  required
-                />
-                <input
-                  oninput="goNext(event)"
-                  maxlength="1"
-                  type="text"
-                  required
-                />
-                <input
-                  oninput="goNext(event)"
-                  maxlength="1"
-                  type="text"
-                  required
-                />
-                <input
-                  oninput="goNext(event)"
-                  maxlength="1"
-                  type="text"
-                  required
-                />
-              </div>
+        class="modal fade modal-fullscreen-lg-down"
+        id="popup-sendmobil"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                <div class="text-section">
+                  <h1>Telefonunuzu yoxlayın</h1>
+                  <p>
+                    <span
+                      >Lazımi məlumatlar (+994) 70 252 54 56 nömrəsinə
+                      göndərildi. Telefonunuza göndərilən 4 xanalı kodu
+                      girin</span
+                    >
+                  </p>
+                </div>
+                <div class="securty-code">
+                  <input
+                    oninput="goNext(event)"
+                    maxlength="1"
+                    type="text"
+                    required
+                  />
+                  <input
+                    oninput="goNext(event)"
+                    maxlength="1"
+                    type="text"
+                    required
+                  />
+                  <input
+                    oninput="goNext(event)"
+                    maxlength="1"
+                    type="text"
+                    required
+                  />
+                  <input
+                    oninput="goNext(event)"
+                    maxlength="1"
+                    type="text"
+                    required
+                  />
+                </div>
 
-              <div class="button-gre gre">
-                <a data-bs-toggle="modal" data-bs-target="#popup-davamedin"
-                  >Davam edin</a
-                >
-              </div>
-              <div class="refresh">
-                <a href="#">Nömrəni yenilə</a>
-                <a href="#">Kodu yenidən göndər</a>
+                <div class="button-gre gre">
+                  <a data-bs-toggle="modal" data-bs-target="#popup-davamedin"
+                    >Davam edin</a
+                  >
+                </div>
+                <div class="refresh">
+                  <a href="#">Nömrəni yenilə</a>
+                  <a href="#">Kodu yenidən göndər</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
     </header>
     <!-- main -->
-    <section style="position: relative;">
+    
+    <section style="position: relative; " class="main-s">
       <div class="container main">
         <div class="logo">
           <a href="#">Logo</a>
         </div>
         <div class="search-box">
-          <button class="dropdown-btn ">
-            <svg
+          <button class="dropdown-btn">
+          <!-- svg1 -->    
+             <svg
               width="18"
               height="18"
               viewBox="0 0 18 18"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              id="svg-1"
             >
               <path
                 d="M2 4C2.53043 4 3.03914 3.78929 3.41421 3.41421C3.78929 3.03914 4 2.53043 4 2C4 1.46957 3.78929 0.960859 3.41421 0.585786C3.03914 0.210714 2.53043 0 2 0C1.46957 0 0.960859 0.210714 0.585786 0.585786C0.210714 0.960859 0 1.46957 0 2C0 2.53043 0.210714 3.03914 0.585786 3.41421C0.960859 3.78929 1.46957 4 2 4ZM9 4C9.53043 4 10.0391 3.78929 10.4142 3.41421C10.7893 3.03914 11 2.53043 11 2C11 1.46957 10.7893 0.960859 10.4142 0.585786C10.0391 0.210714 9.53043 0 9 0C8.46957 0 7.96086 0.210714 7.58579 0.585786C7.21071 0.960859 7 1.46957 7 2C7 2.53043 7.21071 3.03914 7.58579 3.41421C7.96086 3.78929 8.46957 4 9 4ZM16 4C16.5304 4 17.0391 3.78929 17.4142 3.41421C17.7893 3.03914 18 2.53043 18 2C18 1.46957 17.7893 0.960859 17.4142 0.585786C17.0391 0.210714 16.5304 0 16 0C15.4696 0 14.9609 0.210714 14.5858 0.585786C14.2107 0.960859 14 1.46957 14 2C14 2.53043 14.2107 3.03914 14.5858 3.41421C14.9609 3.78929 15.4696 4 16 4ZM2 11C2.53043 11 3.03914 10.7893 3.41421 10.4142C3.78929 10.0391 4 9.53043 4 9C4 8.46957 3.78929 7.96086 3.41421 7.58579C3.03914 7.21071 2.53043 7 2 7C1.46957 7 0.960859 7.21071 0.585786 7.58579C0.210714 7.96086 0 8.46957 0 9C0 9.53043 0.210714 10.0391 0.585786 10.4142C0.960859 10.7893 1.46957 11 2 11ZM9 11C9.53043 11 10.0391 10.7893 10.4142 10.4142C10.7893 10.0391 11 9.53043 11 9C11 8.46957 10.7893 7.96086 10.4142 7.58579C10.0391 7.21071 9.53043 7 9 7C8.46957 7 7.96086 7.21071 7.58579 7.58579C7.21071 7.96086 7 8.46957 7 9C7 9.53043 7.21071 10.0391 7.58579 10.4142C7.96086 10.7893 8.46957 11 9 11ZM16 11C16.5304 11 17.0391 10.7893 17.4142 10.4142C17.7893 10.0391 18 9.53043 18 9C18 8.46957 17.7893 7.96086 17.4142 7.58579C17.0391 7.21071 16.5304 7 16 7C15.4696 7 14.9609 7.21071 14.5858 7.58579C14.2107 7.96086 14 8.46957 14 9C14 9.53043 14.2107 10.0391 14.5858 10.4142C14.9609 10.7893 15.4696 11 16 11ZM2 18C2.53043 18 3.03914 17.7893 3.41421 17.4142C3.78929 17.0391 4 16.5304 4 16C4 15.4696 3.78929 14.9609 3.41421 14.5858C3.03914 14.2107 2.53043 14 2 14C1.46957 14 0.960859 14.2107 0.585786 14.5858C0.210714 14.9609 0 15.4696 0 16C0 16.5304 0.210714 17.0391 0.585786 17.4142C0.960859 17.7893 1.46957 18 2 18ZM9 18C9.53043 18 10.0391 17.7893 10.4142 17.4142C10.7893 17.0391 11 16.5304 11 16C11 15.4696 10.7893 14.9609 10.4142 14.5858C10.0391 14.2107 9.53043 14 9 14C8.46957 14 7.96086 14.2107 7.58579 14.5858C7.21071 14.9609 7 15.4696 7 16C7 16.5304 7.21071 17.0391 7.58579 17.4142C7.96086 17.7893 8.46957 18 9 18ZM16 18C16.5304 18 17.0391 17.7893 17.4142 17.4142C17.7893 17.0391 18 16.5304 18 16C18 15.4696 17.7893 14.9609 17.4142 14.5858C17.0391 14.2107 16.5304 14 16 14C15.4696 14 14.9609 14.2107 14.5858 14.5858C14.2107 14.9609 14 15.4696 14 16C14 16.5304 14.2107 17.0391 14.5858 17.4142C14.9609 17.7893 15.4696 18 16 18Z"
                 fill="#6A5BCD"
               />
+            </svg>        
+          <!-- svg1 -->
+
+          <!-- svg2 -->        
+             <svg
+              width="13"
+              height="12"
+              viewBox="0 0 13 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              id="svg-2"
+              
+              
+            >
+              <path
+                d="M6.12631 5.99984L11.3991 11.2428M0.853516 11.2428L6.12631 5.99984L0.853516 11.2428ZM11.3991 0.756836L6.1253 5.99984L11.3991 0.756836ZM6.1253 5.99984L0.853516 0.756836L6.1253 5.99984Z"
+                stroke="#B6B5BF"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
             </svg>
-            <span > Kateqoriya seçin </span>
+          <!-- svg2 -->
+         <span> Kateqoriya seçin </span>
           </button>
           <input
             type="text"
@@ -878,83 +904,94 @@
             <div class="category-type">
               <ul>
                 <li class="category-box">
-                  <div >
-                    <i class="fa-solid fa-house"></i> 
-                   <a href="#">Ev və bağ</a>
+                  <div>
+                    <a href="#">
+                      <i class="fa-solid fa-house home"></i>
+                      Ev və bağ</a
+                    >
                     <i class="fa-solid fa-chevron-right"></i>
                   </div>
                 </li>
-        
+
                 <li class="category-box">
                   <div>
-                    <i class="fa-solid fa-mobile-button"></i>
-                  <a href="#">Elektronika və texnika</a>
-                  <i class="fa-solid fa-chevron-right"></i>
-                  </div>
-                </li>
-          
-                <li class="category-box">
-                  <div>
-                    <i class="fa-solid fa-building"></i>
-                   <a href="#">Daşınmaz əmlak</a>
+                    <a href="#">
+                      <i class="fa-solid fa-mobile-button mobile-b"></i>
+                      Elektronika və texnika</a
+                    >
                     <i class="fa-solid fa-chevron-right"></i>
                   </div>
                 </li>
-            
+
                 <li class="category-box">
                   <div>
-                    <i class="fa-solid fa-shirt"></i>
-                    <a href="#">Şəxsi əşyalar</a>
+                    <a href="#">
+                      <i class="fa-solid fa-building build"></i>
+                      Daşınmaz əmlak</a
+                    >
                     <i class="fa-solid fa-chevron-right"></i>
                   </div>
                 </li>
+
                 <li class="category-box">
                   <div>
-                    <i class="fa-solid fa-futbol"></i>
-               <a href="#">Hobbi,asudə</a>
-                <i class="fa-solid fa-chevron-right"></i>
-                  </div>
-                </li>
-                <li class="category-box">
-                  <div>
-                    <i class="fa-solid fa-truck"></i>
-                <a href="#">Uşaq aləmi</a>
-                <i class="fa-solid fa-chevron-right"></i>
-                  </div>
-                </li>
-                <li class="category-box">
-                  <div>
-                    <i class="fa-solid fa-dog"></i>
-                 <a href="#">Heyvan</a>
-                <i class="fa-solid fa-chevron-right"></i>
-                  </div>
-                </li>
-                <li class="category-box">
-                  <div>
-                    <i class="fa-solid fa-car"></i>
-                    <a href="#">Nəqliyyat</a>
+                    <a href="#">
+                      <i class="fa-solid fa-shirt shirt"></i>Şəxsi əşyalar</a
+                    >
                     <i class="fa-solid fa-chevron-right"></i>
                   </div>
                 </li>
                 <li class="category-box">
                   <div>
-                    <i class="fa-solid fa-bag-shopping"></i>
-                <a href="#">Vakansiyalar</a>
-                <i class="fa-solid fa-chevron-right"></i>
+                    <a href="#">
+                      <i class="fa-solid fa-futbol ball"></i>Hobbi,asudə</a
+                    >
+                    <i class="fa-solid fa-chevron-right"></i>
                   </div>
                 </li>
                 <li class="category-box">
                   <div>
-                    <i class="fa-solid fa-wrench"></i>
-                   <a href="#">Digər xidmətlər</a>
+                    <a href="#">
+                      <i class="fa-solid fa-truck truck"></i>Uşaq aləmi</a
+                    >
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                </li>
+                <li class="category-box">
+                  <div>
+                    <a href="#"><i class="fa-solid fa-dog dog"></i>Heyvan</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                </li>
+                <li class="category-box">
+                  <div>
+                    <a href="#"><i class="fa-solid fa-car car"></i>Nəqliyyat</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                </li>
+                <li class="category-box">
+                  <div>
+                    <a href="#">
+                      <i class="fa-solid fa-bag-shopping bag"></i
+                      >Vakansiyalar</a
+                    >
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                </li>
+                <li class="category-box">
+                  <div>
+                    <a href="#"
+                      ><i class="fa-solid fa-wrench wrench"></i>Digər
+                      xidmətlər</a
+                    >
                     <i class="fa-solid fa-chevron-right"></i>
                   </div>
                 </li>
               </ul>
             </div>
             <div class="popular-search">
-              <p>populyar axtarışlar</p>
-              <ul  class="popular-ul">
+              <p>Populyar axtarışlar</p>
+              <ul class="popular-ul">
                 <li>Bakcell nömrələri</li>
                 <li>Xiomit</li>
                 <li>Ev alqı satqısı</li>
@@ -964,14 +1001,8 @@
                 <li>Nar nömrələri</li>
                 <li>Azercell nömrələri</li>
               </ul>
+            </div>
           </div>
-         
-          </div>
-          
-          
-
-
-
         </section>
         <div class="select-box">
           <a href="#"><i class="fa-regular fa-heart"></i> </a>
@@ -2032,7 +2063,7 @@
 
     <!-- bootsrab cdnjs link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="/script/script.js"></script>
   </body>
 </html>

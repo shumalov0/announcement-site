@@ -8,6 +8,8 @@ let paswordFour = document.querySelector("#password-four");
 let paswordFive = document.querySelector("#password-five");
 let paswordSixt = document.querySelector("#password-sixt");
 let dropdownBtn = document.querySelector(".dropdown-btn");
+let svgOne = document.querySelector("#svg-1")
+let svgTwo = document.querySelector("#svg-2")
 
 
 
@@ -59,3 +61,32 @@ function showHidesixt() {
 function goNext (e) {
   e.target.nextElementSibling.focus();
 };
+
+
+$(".dropdown-btn").click(function(){
+  $(this).parent().toggleClass("active")
+})
+
+$(".dropdown-btn").click(function(){
+  $(".category-dropdown").toggleClass("activetwo")
+})
+
+$(".dropdown-btn").click(function(){
+  $(".black-area").toggleClass("active")
+})
+$(".black-area").click(function(){
+  $(".black-area").toggleClass("active")
+  $(".category-dropdown").toggleClass("activetwo")
+  $(".search-box").toggleClass("active")
+})
+$(".user a").click(function(){
+  $(".main-s").css("z-index","0")
+  $(".head").css("z-index","auto")
+})
+$(".btn-close").click(function(){
+  $(".main-s").css("z-index","99999")
+  $(".head").css("z-index","99999")
+})
+
+
+
