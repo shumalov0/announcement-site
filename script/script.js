@@ -72,21 +72,25 @@ $(".dropdown-btn").click(function(){
 })
 
 $(".dropdown-btn").click(function(){
-  $(".black-area").toggleClass("active")
+
 })
 $(".black-area").click(function(){
-  $(".black-area").toggleClass("active")
+ 
   $(".category-dropdown").toggleClass("activetwo")
   $(".search-box").toggleClass("active")
 })
 $(".user a").click(function(){
   $(".main-s").css("z-index","0")
   $(".head").css("z-index","auto")
+ 
 })
 $(".btn-close").click(function(){
   $(".main-s").css("z-index","99999")
   $(".head").css("z-index","99999")
 })
+
+
+
 
 
 

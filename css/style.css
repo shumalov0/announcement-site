@@ -169,13 +169,13 @@ body {
 
 .select-box {
     display: flex;
-    margin-right: 70px;
+    justify-content: flex-end;
     align-items: center;
 }
 
 .select-box a {
     color: #A8A8AA;
-    padding-right: 10px;
+    margin-right: 10px;
     text-decoration: none;
 }
 
@@ -730,7 +730,7 @@ body {
     right: 0;
     left: 0;
     background-color: #000000;
-    z-index: 999;
+    z-index: 9;
     opacity: 0.4;
     scale: 0;
     pointer-events: none;
@@ -738,7 +738,7 @@ body {
 .active.black-area{
     scale: 1 !important;
     pointer-events: all;
-    z-index: 9999;
+    z-index: 9;
 }
 
 
@@ -1243,10 +1243,10 @@ body {
 .category-bb{
    display: flex;
    width: 100%;
-   justify-content: space-between;
    margin: 0 auto;
    max-width: 1280px;
    background-color: #ffff;
+   position: relative;
 
 }
 
@@ -1422,6 +1422,8 @@ body {
     justify-content: center;
    padding: 25px;
    border: 1px solid rgba(106, 91, 205, 0.1);
+   position: absolute;
+   right: 60px;
 
 }
 .popular-search p{
@@ -1472,4 +1474,94 @@ body {
     -moz-transition:0.3s all ease-in-out ;
     -ms-transition:0.3s all ease-in-out ;
     -o-transition:0.3s all ease-in-out ;
+}
+
+.types{
+    display: flex;
+    align-items: center;
+   flex-direction: column;
+   margin-top: 10px;
+   
+  
+}
+
+.types-list{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+   
+    
+
+}
+
+.types-list li{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+.types-list a{
+    text-decoration: none;
+    color: #7D8092;
+    font-size: 14px;
+    margin-right:80px;
+}
+
+
+.search-drop{
+  background-color: #FFFFFF;
+  width: 505px;
+  height: 140px;
+  border: 1px solid #E8E8E8;
+  border-radius: 0px 0px 5px 5px;
+  position: absolute;
+  left: 424px;
+  top: 109px;
+}
+
+.search-drop .city{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.city i{
+    color: #D0D0D2;
+    margin-right: 12px;
+}
+.city a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #979798;
+}
+.search-drop hr{
+    color: #a2a0a0;
+}
+.search-drop p{
+    padding-left: 20px;
+}
+.search-history{
+    padding-left: 20px;
+    display: flex;
+}
+.history-box{
+    padding: 5px 10px;
+    background-color: #EFEFFD;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-right: 30px;
+   
+
+}
+
+.history-box a{
+    color: #6A5BCD;
+    text-decoration: none;
+    font-weight: 500;
+ 
 }
