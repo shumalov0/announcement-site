@@ -161,10 +161,7 @@ body {
     position: relative;
     text-align: center;
     color: #A8A8AA;
-    position: absolute;
-    right: 10px;
-
-
+    right: 30px;
 }
 
 .select-box {
@@ -1498,7 +1495,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    align-items: center;
+    align-items: center; 
 }
 .types-list a{
     text-decoration: none;
@@ -1511,13 +1508,16 @@ body {
 .search-drop{
   background-color: #FFFFFF;
   width: 505px;
-  height: 140px;
+  height: 260px;
   border: 1px solid #E8E8E8;
   border-radius: 0px 0px 5px 5px;
   position: absolute;
-  left: 424px;
-  top: 109px;
+  left: 176px;
+  top: 55px;
+  scale: 0;
 }
+
+
 
 .search-drop .city{
     display: flex;
@@ -1535,6 +1535,8 @@ body {
     text-decoration: none;
     font-size: 14px;
     color: #979798;
+    right: auto!important;
+    margin-left: 20px;
 }
 .search-drop hr{
     color: #a2a0a0;
@@ -1549,19 +1551,32 @@ body {
 .history-box{
     padding: 5px 10px;
     background-color: #EFEFFD;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+    border-radius: 20px !important;
+    -webkit-border-radius: 20px !important;
+    -moz-border-radius: 20px !important;
+    -ms-border-radius: 20px !important;
+    -o-border-radius: 20px !important;
     margin-right: 30px;
-   
-
+  
 }
 
 .history-box a{
     color: #6A5BCD;
     text-decoration: none;
     font-weight: 500;
+    text-align: center;
+    right: 0 !important;
  
 }
+
+
+.same p{
+    font-weight: 500;
+    color: #484B5E;
+    margin-top: 10px;
+}
+
+.same p span{
+    color: #A8A8AA !important;
+}
+

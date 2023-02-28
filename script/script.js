@@ -84,11 +84,16 @@ $(".user a").click(function(){
   $(".head").css("z-index","auto")
  
 })
+
 $(".btn-close").click(function(){
   $(".main-s").css("z-index","99999")
   $(".head").css("z-index","99999")
 })
 
+
+$(".input-btn").click(function(){
+  $(".search-drop").css("scale","1")
+})
 
 
 
