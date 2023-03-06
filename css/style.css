@@ -103,7 +103,7 @@ body {
     z-index: 99999;
 }
 .logo {
-    margin-left: 70px;
+    margin-right: 70px;
 }
 
 .logo a {
@@ -1478,8 +1478,15 @@ body {
     align-items: center;
    flex-direction: column;
    margin-top: 10px;
+   visibility: hidden;
+   opacity: 0;
    
   
+}
+
+.types .active-viz{
+    visibility: visible ;
+    opacity: 1;
 }
 
 .types-list{
@@ -1580,3 +1587,164 @@ body {
     color: #A8A8AA !important;
 }
 
+.menziller{
+    margin-top: 80px;
+}
+
+.menzil-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menzil-header h1{
+    font-weight: 700;
+    font-size: 30px;
+    color: #484B5E;
+    
+}
+
+.menzil-header  p{
+    color: #979798;
+    font-weight: 400;
+    font-size: 14px;
+}
+.menzil-header  p span{
+    color: #484B5E;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+.menzil-main{
+    background-color: #ffff;
+    height: 302px;
+    width: 1295px;
+    display: flex;
+    align-items: center;
+}
+.menzil-box{
+   
+    padding: 30px;
+    max-width: 100%;
+    position: relative;
+  
+}
+.menzil-type a{
+    text-decoration: none;
+    color:#7D8092 ;
+   font-size: 18px;
+}
+.menzil-type span{
+  padding-left: 40px;
+  color: #484B5E;
+  font-weight: 500;
+}
+
+.menzil-type{
+   display: flex;
+   margin-bottom: 20px;
+ justify-content: space-between;
+    
+}
+
+.menzil-footer{
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-top: 2px solid #F3F4FF;
+   
+}
+
+.menzil-buttons select {
+  margin-left: 48px;
+  width: 182px;
+  height: 50px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+   background-color: #EFF3FA;
+   border: 0;
+   text-align: center;
+}
+
+.menzil-buttons button{
+  margin-left: 48px;
+  width: 182px;
+  height: 50px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+   background-color: #EFF3FA;
+   border: 0;
+   text-align: center;
+}
+
+.yeni-elan{
+ padding-top: 100px;
+}
+
+.regulars{
+    background-color: #F0F1FAD9;
+    padding: 30px;
+}
+
+.regulars h2{
+    color: #686877;
+    font-size: 20px;
+    font-weight: 500;
+}
+.regulars p{
+    color:#707079 ;
+}
+
+/* sexsi melumatlar */
+.yeni-info{
+    margin-top: 41px;
+}
+.inputs{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input-box{
+    padding: 20px;
+   
+    
+}
+
+.input-box span{
+ color: #979CA8;
+ font: 14px;
+ font-weight: 700;
+
+}
+.input-box input{
+    width: 375px;
+    height: 50px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: none;
+    display: flex; 
+    align-items: center;
+   padding: 9px;
+   margin-right: 50px;
+} 
+.numbers{
+    width: 262px !important;
+}
+
+.phone-flex{
+    display: flex;
+}
+
+.phone-flex select {
+ border: none;
+ outline: none;
+}

@@ -96,6 +96,11 @@ $(".input-btn").click(function(){
 })
 
 
-
-
-
+$(".category-box").hover(function(){
+  $(".category-box").removeClass("active-viz")
+  $(this).addClass("active-viz")
+  let child = $(this).data("id")
+  $(".types-list").css("display","none")
+  $(`.types-list:nth-child(${child})`).css("display","block")
+  
+})
