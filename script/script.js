@@ -14,6 +14,8 @@ let svgTwo = document.querySelector("#svg-2")
 
 
 
+
+
 function showHide() {
   if (pasword.type === "password") {
     pasword.setAttribute("type", "text");
@@ -104,3 +106,7 @@ $(".category-box").hover(function(){
   $(`.types-list:nth-child(${child})`).css("display","block")
   
 })
+ 
+$(".yeni-elan").click(function(){
+  $(".sesarch-drop").css("scale","0")
+}) 
