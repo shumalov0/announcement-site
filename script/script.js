@@ -98,15 +98,42 @@ $(".input-btn").click(function(){
 })
 
 
+// $(".category-box").hover(function(){
+//   $(".types").removeClass("active-viz")
+//   $(this).addClass("active-viz")
+//   let child = $(this).data("id")
+//   $(".types-list").css("display","none")
+//   $(`.types-list:nth-child(${child})`).css("display","block")
+// })
+
 $(".category-box").hover(function(){
-  $(".category-box").removeClass("active-viz")
-  $(this).addClass("active-viz")
-  let child = $(this).data("id")
-  $(".types-list").css("display","none")
-  $(`.types-list:nth-child(${child})`).css("display","block")
-  
+  $(".types").css("display","block")
+  $(this).css("display","none")
+
 })
+
+
  
 $(".yeni-elan").click(function(){
-  $(".sesarch-drop").css("scale","0")
+  $(".container").css("scale","0")
 }) 
+
+$(".mehsul-hq").click(function(){
+  $(".sellercontent-two").css("display","none")
+  $(".sellercontent-one").css("display","block")
+  $(".mehsul-hq").addClass("activeh")
+  $(".ozellik").removeClass("activeh")
+})
+$(".ozellik").click(function(){
+  $(".sellercontent-one").css("display","none")
+  $(".sellercontent-two").css("display","block")
+  $(".mehsul-hq").removeClass("activeh")
+  $(".ozellik").addClass("activeh")
+})
+
+$(".mehsul-infos").click(function(){
+  $(".search-drop").css('display','none')
+})
+$(".input-btn").click(function(){
+  $(".search-drop").css('display','block')
+})
