@@ -101,6 +101,8 @@ body {
 .main-s {
     background-color: #F6F8FE;
     z-index: 99999;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 30px;
 }
 
 .logo {
@@ -2290,3 +2292,92 @@ li {
 .bgc {
     color: #595961;
 }
+
+.photo{
+    text-align: center;
+}
+
+.photo img{
+    width: 30px;
+    
+}
+
+
+
+
+.side-bar {
+     position: sticky;
+     top: 0;
+     right: 0px;
+     margin-top: 100px;
+     width: 272px;
+     height: 519px;
+     background-color: #ffff;
+     border: 1px solid #e5e7f1;
+     border-radius: 10px;
+     font-weight: 600;
+     
+     
+}
+
+.aye{
+padding: 0 50px;
+ justify-content: space-between;
+}
+
+.side-type{
+   margin-top: 5px;
+   margin-left: 5px;
+   margin-right: 5px;
+    padding: 10px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.side-type:hover{
+   background-color: #EFEFFD;
+   
+}
+
+.side-type:hover a{
+    color: #6A5BCD;
+}
+.side-type:hover i{
+    color: #6A5BCD !important;
+}
+
+
+.side-type a{
+  font-size: 16px;
+  text-decoration: none;
+  color: #5A5C68;
+}
+.side-type i{
+    color: #ABACAE !important;
+}
+.user-at{
+    margin-top: 50%;
+    margin-left: 10px;
+}
+.user-at img{
+    object-fit:contain;
+    width: 50px;
+
+}
+
+.uv{
+    display: flex;
+    padding: 10px;
+    margin-top: 10px solid #0000 !important;
+
+}
+
+.intiqam {
+    border: 1px solid rgb(211, 211, 211);
+    width: 100% !important;
+}
+
+
+
